@@ -3,7 +3,6 @@ package main
 import "time"
 
 func twoTreeFourTimes(base int, c chan int) {
-	println(base)
 	time.Sleep(time.Second)
 	c <- 2 * base
 	time.Sleep(time.Second)
@@ -18,8 +17,6 @@ func main() {
 	println("A")
 	go twoTreeFourTimes(3, c)
 	a, b := <-c, <-c
-	println(a, b)
-
-	println("qualquer coisa")
+	println("a", a, "b", b)
 
 }
