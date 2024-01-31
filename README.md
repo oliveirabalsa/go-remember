@@ -14,12 +14,6 @@ This repository contains the code for my fantastic projects in Go! 🎉
 - **struct.go:** Basics of struct in Go.
 - **struct_methods.go:** Adding methods to structs for enhanced functionality.
 
-## Latest Commit
-- Author: Leonardo Balsalobre
-- Message: feat: add projects
-- Commit ID: e05afd4
-- Time: 4 minutes ago
-
 ## History
 Check out the commit history for more details on the project's evolution.
 
