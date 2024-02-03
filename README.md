@@ -1,9 +1,11 @@
 # Welcome to My Awesome Project! 🚀
 
 ## Overview
+
 This repository contains the code for my fantastic projects in Go! 🎉
 
 ## Project Structure
+
 - **channels:** Implementation of goroutines with channels.
 - **goroutines:** Exploration of goroutines in Go.
 - **custom_types.go:** Introduction of custom types in Go.
@@ -15,6 +17,9 @@ This repository contains the code for my fantastic projects in Go! 🎉
 - **struct_methods.go:** Adding methods to structs for enhanced functionality.
 
 ## History
+
 Check out the commit history for more details on the project's evolution.
 
 Feel free to explore and contribute! 🌟
+
+@ Leonardo Balsalobre
