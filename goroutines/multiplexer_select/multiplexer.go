@@ -16,7 +16,7 @@ func falar(pessoa string) <-chan string {
 	return c
 }
 
-func juntar(entrada1, entrada2 <-chan string) <-chan string {
+func juntar(entrada1, entrada2, entrada3 <-chan string) <-chan string {
 	c := make(chan string)
 	go func() {
 		for {
@@ -25,6 +25,8 @@ func juntar(entrada1, entrada2 <-chan string) <-chan string {
 				c <- s
 			case s := <-entrada2:
 				c <- s
+			case s := <-entrada3:
+				c <- s
 			}
 		}
 	}()
@@ -32,8 +34,8 @@ func juntar(entrada1, entrada2 <-chan string) <-chan string {
 }
 
 func main() {
-	c := juntar(falar("João"), falar("Maria"))
-	for i := 0; i < 6; i++ {
+	c := juntar(falar("João"), falar("Maria"), falar("Bianca"))
+	for i := 0; i < 9; i++ {
 		fmt.Println(<-c)
 	}
 }
